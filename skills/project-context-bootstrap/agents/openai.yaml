@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Context Bootstrap"
+  short_description: "Build a project-native agent context system"
+  default_prompt: "Use $project-context-bootstrap to inspect this repository and create or repair its project-native context system."
