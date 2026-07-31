@@ -1,32 +1,36 @@
 # Agent Context Kernel Guide
 
-`AGENTS.md` is this repository's context entry. It routes each task to the narrowest durable owner and keeps repository-wide execution gates compact.
+`AGENTS.md` is this repository's compact context entry. It routes each task to the narrowest durable owner.
 
-## Primary routes
+## Primary Routes
 
 | Concern | Primary owner |
 |---|---|
 | Four kernel principles | `skills/project-context-bootstrap/references/kernel-principles.md` |
+| Mandatory bootstrap outputs | `skills/project-context-bootstrap/references/bootstrap-contract.md` |
 | Bootstrap and repair method | `skills/project-context-bootstrap/SKILL.md` |
-| Skill interface | `skills/project-context-bootstrap/agents/openai.yaml` |
+| Repository context evolution method | `.agents/skills/evolve-project-context/SKILL.md` |
+| Installation behavior | `scripts/install.py` |
+| User workflows | `docs/usage.md` |
 | Public orientation | `README.md` |
-| Context regression evidence | `tests/test_context_contract.py` |
+| Context and installer regression evidence | `tests/` |
 | Process history | Git history |
 
-## Execution gates
+## Execution Gates
 
-1. Read the principle owner and the affected procedural or public owner before changing repository context.
-2. Change principle semantics in `kernel-principles.md` first, then align the skill, public route, and regression evidence in the same change.
-3. Change bootstrap behavior in `SKILL.md`, then align interface metadata and regression evidence.
-4. Keep routes navigational and let canonical owners carry complete definitions.
-5. Express shared guidance through intended states, owners, conditions, actions, and effects.
-6. Preserve a compact entry and a self-contained installable skill.
-7. Run `python -m unittest discover -s tests` after context changes.
+1. Use `.agents/skills/evolve-project-context/SKILL.md` for every repository context-system change.
+2. Read the principle owner, output contract, and affected procedural or public owner before editing.
+3. Change principle semantics in `kernel-principles.md`, then align dependent procedure, routes, and evidence in the same change.
+4. Change required-output semantics in `bootstrap-contract.md`, then align the bootstrap skill, public guidance, and regression evidence.
+5. Keep installer logic in `scripts/install.py`; shell and PowerShell entrypoints route arguments to that owner.
+6. Keep routes navigational, canonical owners complete, and shared guidance directed toward intended states and responsibilities.
+7. Preserve a compact repository entry and a self-contained installable skill.
+8. Run `python -m unittest discover -s tests` after context or installer changes.
 
-## Task route
+## Task Route
 
 1. Identify the semantic owner from the table.
-2. Read direct evidence needed to verify the current state.
-3. Apply the bundled principles through the affected owner.
+2. Inspect direct evidence required to verify current state.
+3. Apply all four principles through the affected owner.
 4. Update dependent routes and tests together.
-5. Validate the complete repository context contract.
+5. Validate the complete repository contract.

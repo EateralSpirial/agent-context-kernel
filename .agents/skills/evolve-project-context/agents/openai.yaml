@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evolve Project Context"
+  short_description: "Evolve the Agent Context Kernel context system"
+  default_prompt: "Use $evolve-project-context to update this repository's context owners, routes, procedures, wording, or semantic validation."

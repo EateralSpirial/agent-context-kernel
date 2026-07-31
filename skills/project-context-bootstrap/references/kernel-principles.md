@@ -1,6 +1,6 @@
 # Agent Context Kernel Principles
 
-This file owns the canonical definitions of the kernel's four principles. They form a compact governance layer for project-native agent context systems.
+This file owns the canonical definitions of the four principles. They govern the bootstrap skill, every context system it creates, and each project's later context evolution.
 
 ## 1. Onboarding Principle
 
@@ -10,17 +10,17 @@ Treat the coding agent as a strong engineer with general programming knowledge, 
 
 Code and executable evidence carry ordinary mechanics. Context earns permanence when it reduces costly rediscovery, prevents material ambiguity, or improves decisions across tasks. Explain the reason behind a rule when the reason helps the agent generalize beyond enumerated cases. Let Git retain process history while the working tree presents current guidance.
 
-A successful onboarding route moves from a compact entry to the narrowest relevant owner and then to direct evidence. The agent reads only the context required by the task and expands its investigation as evidence demands.
+A successful onboarding route moves from a compact entry to the narrowest relevant owner and then to direct evidence. The agent reads the context required by the task and expands its investigation as evidence demands.
 
 ## 2. Singular Truth Principle
 
-**Each durable project truth has one primary owner and one canonical definition.**
+**Each durable project truth has one primary owner and at most one canonical context definition.**
 
 Canonical owners carry complete definitions. Indexes and entry files route to those owners. Local applications describe only the additional facts created by their own scope, condition, or effect. Simple, common, and cheaply recoverable truths may remain implicit in code or evidence.
 
 One definition keeps a semantic change atomic. Parallel definitions can remain individually plausible while drifting across a change, leaving old and new project states active at the same time. Ownership therefore applies to standards, contracts, plans, procedures, status meanings, thresholds, and other context-worthy facts.
 
-Generated projections may appear in several places when one source produces them deterministically. Human-maintained parallel definitions create separate truth owners and require consolidation.
+Generated projections may appear in several places when one source produces them deterministically. Human-maintained context uses one canonical owner per durable meaning.
 
 ## 3. Affirmative Direction Principle
 
